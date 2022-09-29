@@ -8,6 +8,6 @@ function init() {
 
 function onGreetUserBtnClicked() {
     const nameField = document.getElementById("nameField");
-    alert(`hello ${nameField}`);
+    alert(`hello ${nameField.value}`);
     
 }
