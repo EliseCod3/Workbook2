@@ -16,10 +16,11 @@ function calculatePay() {
     let payRate = Number(payRateInput.value);
     let pay = hoursWorked * payRate;
     let message = `Pay is ${pay}`;
-    
-    //create your message to display
     console.log(hoursWorked * payRate);
     
+    //create your message to display
+    let message = `Pay is ${pay}`;
+
     //display message
     resultParagraph.innerText = message;
 }
