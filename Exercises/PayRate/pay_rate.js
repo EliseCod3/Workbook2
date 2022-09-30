@@ -5,6 +5,8 @@ window.onload = function init() {
     calculateButton.onclick = calculatePay;
 }
 
+init();
+
 function calculatePay() {
     //query html elements on the page and put them into variables
     const hoursWorkedInput = document.getElementById("hoursWorkedInput");
@@ -15,7 +17,6 @@ function calculatePay() {
     let hoursWorked = Number(hoursWorkedInput.value);
     let payRate = Number(payRateInput.value);
     let pay = hoursWorked * payRate;
-    let message = `Pay is ${pay}`;
     console.log(hoursWorked * payRate);
     
     //create your message to display
